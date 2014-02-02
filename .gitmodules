@@ -1,0 +1,6 @@
+[submodule "submodules/CocoaLumberjack"]
+	path = submodules/CocoaLumberjack
+	url = git@github.com:CocoaLumberjack/CocoaLumberjack.git
+[submodule "submodules/TouchJSON"]
+	path = submodules/TouchJSON
+	url = git@github.com:TouchCode/TouchJSON.git

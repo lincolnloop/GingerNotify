@@ -1,0 +1,13 @@
+After cloning the main repository run:
+
+```
+git submodule init
+git submodule update
+```
+
+These modules were installed with:
+
+```
+git submodule add git@github.com:TouchCode/TouchJSON.git submodules/TouchJSON
+git submodule add git@github.com:CocoaLumberjack/CocoaLumberjack.git submodules/CocoaLumberjack
+```

@@ -16,3 +16,9 @@ cd GingerNotify
 git submodule init
 git submodule update
 ```
+
+To compile a DEBUG release simply do:
+
+```
+xcodebuild -configuration Debug
+```

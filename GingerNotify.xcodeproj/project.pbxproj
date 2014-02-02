@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B03D3B51666896900F1E044 /* StatusMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B03D3B41666896900F1E044 /* StatusMenu.m */; };
+		5B152653189E678100CB4569 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B15264D189E678100CB4569 /* CJSONDeserializer.m */; };
+		5B152654189E678100CB4569 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B15264F189E678100CB4569 /* CJSONSerializer.m */; };
+		5B152655189E678100CB4569 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B152652189E678100CB4569 /* NSDictionary_JSONExtensions.m */; };
+		5B15266D189E679500CB4569 /* CLIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B152659189E679500CB4569 /* CLIColor.m */; };
+		5B15266E189E679500CB4569 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B15265B189E679500CB4569 /* DDAbstractDatabaseLogger.m */; };
+		5B15266F189E679500CB4569 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B15265D189E679500CB4569 /* DDASLLogger.m */; };
+		5B152670189E679500CB4569 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B15265F189E679500CB4569 /* DDFileLogger.m */; };
+		5B152671189E679500CB4569 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B152662189E679500CB4569 /* DDLog.m */; };
+		5B152672189E679500CB4569 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B152664189E679500CB4569 /* DDTTYLogger.m */; };
+		5B152673189E679500CB4569 /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B152667189E679500CB4569 /* DDContextFilterLogFormatter.m */; };
+		5B152674189E679500CB4569 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B152669189E679500CB4569 /* DDDispatchQueueLogFormatter.m */; };
+		5B152675189E679500CB4569 /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B15266B189E679500CB4569 /* DDMultiFormatter.m */; };
+		5B152676189E679500CB4569 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5B15266C189E679500CB4569 /* README.txt */; };
+		5B1664EE189E5468002D10A2 /* dockIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5B1664E9189E5468002D10A2 /* dockIcon.icns */; };
+		5B1664EF189E5468002D10A2 /* menuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B1664EA189E5468002D10A2 /* menuIcon.png */; };
+		5B1664F0189E5468002D10A2 /* menuIconInverted.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B1664EB189E5468002D10A2 /* menuIconInverted.png */; };
+		5B1664F1189E5468002D10A2 /* NotificationSound.aif in Resources */ = {isa = PBXBuildFile; fileRef = 5B1664EC189E5468002D10A2 /* NotificationSound.aif */; };
+		5B1664F2189E5468002D10A2 /* NotificationSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B1664ED189E5468002D10A2 /* NotificationSound.mp3 */; };
+		5BF07D611666169600212ED4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF07D601666169600212ED4 /* Cocoa.framework */; };
+		5BF07D6B1666169600212ED4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BF07D691666169600212ED4 /* InfoPlist.strings */; };
+		5BF07D6D1666169600212ED4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF07D6C1666169600212ED4 /* main.m */; };
+		5BF07D711666169600212ED4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5BF07D6F1666169600212ED4 /* Credits.rtf */; };
+		5BF07D741666169600212ED4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF07D731666169600212ED4 /* AppDelegate.m */; };
+		5BF07D771666169600212ED4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF07D751666169600212ED4 /* MainMenu.xib */; };
+		5BF07D82166617F600212ED4 /* ApiSync.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF07D81166617F600212ED4 /* ApiSync.m */; };
+		5BF07DC61666507B00212ED4 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF07DC51666507B00212ED4 /* Preferences.xib */; };
+		5BF07DC9166650D600212ED4 /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF07DC8166650D600212ED4 /* PreferencesController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5B1ACF2F16715C7300E5C363 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5B03D3B31666896900F1E044 /* StatusMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusMenu.h; sourceTree = "<group>"; };
+		5B03D3B41666896900F1E044 /* StatusMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusMenu.m; sourceTree = "<group>"; };
+		5B15264C189E678100CB4569 /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
+		5B15264D189E678100CB4569 /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
+		5B15264E189E678100CB4569 /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
+		5B15264F189E678100CB4569 /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
+		5B152650189E678100CB4569 /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRepresentation.h; sourceTree = "<group>"; };
+		5B152651189E678100CB4569 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
+		5B152652189E678100CB4569 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
+		5B152658189E679500CB4569 /* CLIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLIColor.h; sourceTree = "<group>"; };
+		5B152659189E679500CB4569 /* CLIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLIColor.m; sourceTree = "<group>"; };
+		5B15265A189E679500CB4569 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		5B15265B189E679500CB4569 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		5B15265C189E679500CB4569 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		5B15265D189E679500CB4569 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		5B15265E189E679500CB4569 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		5B15265F189E679500CB4569 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		5B152660189E679500CB4569 /* DDLog+LOGV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDLog+LOGV.h"; sourceTree = "<group>"; };
+		5B152661189E679500CB4569 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		5B152662189E679500CB4569 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		5B152663189E679500CB4569 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		5B152664189E679500CB4569 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		5B152666189E679500CB4569 /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		5B152667189E679500CB4569 /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		5B152668189E679500CB4569 /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		5B152669189E679500CB4569 /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		5B15266A189E679500CB4569 /* DDMultiFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMultiFormatter.h; sourceTree = "<group>"; };
+		5B15266B189E679500CB4569 /* DDMultiFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMultiFormatter.m; sourceTree = "<group>"; };
+		5B15266C189E679500CB4569 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		5B1664E9189E5468002D10A2 /* dockIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = dockIcon.icns; path = media/dockIcon.icns; sourceTree = "<group>"; };
+		5B1664EA189E5468002D10A2 /* menuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuIcon.png; path = media/menuIcon.png; sourceTree = "<group>"; };
+		5B1664EB189E5468002D10A2 /* menuIconInverted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuIconInverted.png; path = media/menuIconInverted.png; sourceTree = "<group>"; };
+		5B1664EC189E5468002D10A2 /* NotificationSound.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = NotificationSound.aif; path = media/NotificationSound.aif; sourceTree = "<group>"; };
+		5B1664ED189E5468002D10A2 /* NotificationSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = NotificationSound.mp3; path = media/NotificationSound.mp3; sourceTree = "<group>"; };
+		5BF07D5C1666169600212ED4 /* GingerNotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GingerNotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BF07D601666169600212ED4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5BF07D631666169600212ED4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5BF07D641666169600212ED4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5BF07D651666169600212ED4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5BF07D681666169600212ED4 /* GingerNotify-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GingerNotify-Info.plist"; sourceTree = "<group>"; };
+		5BF07D6A1666169600212ED4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5BF07D6C1666169600212ED4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5BF07D6E1666169600212ED4 /* GingerNotify-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GingerNotify-Prefix.pch"; sourceTree = "<group>"; };
+		5BF07D701666169600212ED4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		5BF07D721666169600212ED4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5BF07D731666169600212ED4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5BF07D761666169600212ED4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5BF07D80166617F600212ED4 /* ApiSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiSync.h; sourceTree = "<group>"; };
+		5BF07D81166617F600212ED4 /* ApiSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiSync.m; sourceTree = "<group>"; };
+		5BF07DC51666507B00212ED4 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		5BF07DC7166650D600212ED4 /* PreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesController.h; sourceTree = "<group>"; };
+		5BF07DC8166650D600212ED4 /* PreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BF07D591666169600212ED4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF07D611666169600212ED4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B15264A189E675E00CB4569 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				5B152656189E679500CB4569 /* Lumberjack */,
+				5B15264B189E678100CB4569 /* TouchJSON */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		5B15264B189E678100CB4569 /* TouchJSON */ = {
+			isa = PBXGroup;
+			children = (
+				5B15264C189E678100CB4569 /* CJSONDeserializer.h */,
+				5B15264D189E678100CB4569 /* CJSONDeserializer.m */,
+				5B15264E189E678100CB4569 /* CJSONSerializer.h */,
+				5B15264F189E678100CB4569 /* CJSONSerializer.m */,
+				5B152650189E678100CB4569 /* JSONRepresentation.h */,
+				5B152651189E678100CB4569 /* NSDictionary_JSONExtensions.h */,
+				5B152652189E678100CB4569 /* NSDictionary_JSONExtensions.m */,
+			);
+			name = TouchJSON;
+			path = submodules/TouchJSON/Source;
+			sourceTree = SOURCE_ROOT;
+		};
+		5B152656189E679500CB4569 /* Lumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				5B152657189E679500CB4569 /* CLI */,
+				5B15265A189E679500CB4569 /* DDAbstractDatabaseLogger.h */,
+				5B15265B189E679500CB4569 /* DDAbstractDatabaseLogger.m */,
+				5B15265C189E679500CB4569 /* DDASLLogger.h */,
+				5B15265D189E679500CB4569 /* DDASLLogger.m */,
+				5B15265E189E679500CB4569 /* DDFileLogger.h */,
+				5B15265F189E679500CB4569 /* DDFileLogger.m */,
+				5B152660189E679500CB4569 /* DDLog+LOGV.h */,
+				5B152661189E679500CB4569 /* DDLog.h */,
+				5B152662189E679500CB4569 /* DDLog.m */,
+				5B152663189E679500CB4569 /* DDTTYLogger.h */,
+				5B152664189E679500CB4569 /* DDTTYLogger.m */,
+				5B152665189E679500CB4569 /* Extensions */,
+			);
+			name = Lumberjack;
+			path = submodules/CocoaLumberjack/Lumberjack;
+			sourceTree = SOURCE_ROOT;
+		};
+		5B152657189E679500CB4569 /* CLI */ = {
+			isa = PBXGroup;
+			children = (
+				5B152658189E679500CB4569 /* CLIColor.h */,
+				5B152659189E679500CB4569 /* CLIColor.m */,
+			);
+			path = CLI;
+			sourceTree = "<group>";
+		};
+		5B152665189E679500CB4569 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5B152666189E679500CB4569 /* DDContextFilterLogFormatter.h */,
+				5B152667189E679500CB4569 /* DDContextFilterLogFormatter.m */,
+				5B152668189E679500CB4569 /* DDDispatchQueueLogFormatter.h */,
+				5B152669189E679500CB4569 /* DDDispatchQueueLogFormatter.m */,
+				5B15266A189E679500CB4569 /* DDMultiFormatter.h */,
+				5B15266B189E679500CB4569 /* DDMultiFormatter.m */,
+				5B15266C189E679500CB4569 /* README.txt */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5BF07D511666169600212ED4 = {
+			isa = PBXGroup;
+			children = (
+				5BF07D661666169600212ED4 /* GingerNotify */,
+				5BF07D5F1666169600212ED4 /* Frameworks */,
+				5BF07D5D1666169600212ED4 /* Products */,
+			);
+			sourceTree = "<group>";
+			wrapsLines = 0;
+		};
+		5BF07D5D1666169600212ED4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BF07D5C1666169600212ED4 /* GingerNotify.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BF07D5F1666169600212ED4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BF07D601666169600212ED4 /* Cocoa.framework */,
+				5BF07D621666169600212ED4 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BF07D621666169600212ED4 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BF07D631666169600212ED4 /* AppKit.framework */,
+				5BF07D641666169600212ED4 /* CoreData.framework */,
+				5BF07D651666169600212ED4 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		5BF07D661666169600212ED4 /* GingerNotify */ = {
+			isa = PBXGroup;
+			children = (
+				5BF07D80166617F600212ED4 /* ApiSync.h */,
+				5BF07D81166617F600212ED4 /* ApiSync.m */,
+				5BF07D721666169600212ED4 /* AppDelegate.h */,
+				5BF07D731666169600212ED4 /* AppDelegate.m */,
+				5BF07D751666169600212ED4 /* MainMenu.xib */,
+				5BF07DC51666507B00212ED4 /* Preferences.xib */,
+				5BF07DC7166650D600212ED4 /* PreferencesController.h */,
+				5BF07DC8166650D600212ED4 /* PreferencesController.m */,
+				5B03D3B31666896900F1E044 /* StatusMenu.h */,
+				5B03D3B41666896900F1E044 /* StatusMenu.m */,
+				5BF07DA31666182200212ED4 /* Media */,
+				5BF07D671666169600212ED4 /* Supporting Files */,
+				5B15264A189E675E00CB4569 /* Libraries */,
+			);
+			path = GingerNotify;
+			sourceTree = "<group>";
+		};
+		5BF07D671666169600212ED4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BF07D681666169600212ED4 /* GingerNotify-Info.plist */,
+				5BF07D691666169600212ED4 /* InfoPlist.strings */,
+				5BF07D6C1666169600212ED4 /* main.m */,
+				5BF07D6E1666169600212ED4 /* GingerNotify-Prefix.pch */,
+				5BF07D6F1666169600212ED4 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5BF07DA31666182200212ED4 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				5B1664E9189E5468002D10A2 /* dockIcon.icns */,
+				5B1664EA189E5468002D10A2 /* menuIcon.png */,
+				5B1664EB189E5468002D10A2 /* menuIconInverted.png */,
+				5B1664EC189E5468002D10A2 /* NotificationSound.aif */,
+				5B1664ED189E5468002D10A2 /* NotificationSound.mp3 */,
+			);
+			name = Media;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BF07D5B1666169600212ED4 /* GingerNotify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BF07D7A1666169600212ED4 /* Build configuration list for PBXNativeTarget "GingerNotify" */;
+			buildPhases = (
+				5BF07D581666169600212ED4 /* Sources */,
+				5BF07D591666169600212ED4 /* Frameworks */,
+				5B1ACF2F16715C7300E5C363 /* CopyFiles */,
+				5BF07D5A1666169600212ED4 /* Resources */,
+				5B1ACF2A167154CC00E5C363 /* We're done, Increment Build Number on Archive for next release */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GingerNotify;
+			productName = GingerNotify;
+			productReference = 5BF07D5C1666169600212ED4 /* GingerNotify.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BF07D531666169600212ED4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Lincoln Loop";
+			};
+			buildConfigurationList = 5BF07D561666169600212ED4 /* Build configuration list for PBXProject "GingerNotify" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				English,
+			);
+			mainGroup = 5BF07D511666169600212ED4;
+			productRefGroup = 5BF07D5D1666169600212ED4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BF07D5B1666169600212ED4 /* GingerNotify */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BF07D5A1666169600212ED4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF07D6B1666169600212ED4 /* InfoPlist.strings in Resources */,
+				5BF07D711666169600212ED4 /* Credits.rtf in Resources */,
+				5B152676189E679500CB4569 /* README.txt in Resources */,
+				5BF07D771666169600212ED4 /* MainMenu.xib in Resources */,
+				5B1664EF189E5468002D10A2 /* menuIcon.png in Resources */,
+				5B1664EE189E5468002D10A2 /* dockIcon.icns in Resources */,
+				5B1664F1189E5468002D10A2 /* NotificationSound.aif in Resources */,
+				5B1664F0189E5468002D10A2 /* menuIconInverted.png in Resources */,
+				5BF07DC61666507B00212ED4 /* Preferences.xib in Resources */,
+				5B1664F2189E5468002D10A2 /* NotificationSound.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B1ACF2A167154CC00E5C363 /* We're done, Increment Build Number on Archive for next release */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "We're done, Increment Build Number on Archive for next release";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $CONFIGURATION == Release ]; then\n\necho \"Bumping build number...\"\nplist=${PROJECT_DIR}/${INFOPLIST_FILE}\n\nbuildnum=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${plist}\")\nversion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${plist}\")\n\nif [[ \"${buildnum}\" == \"\" ]]; then\n    echo \"No build number in $plist\"\n    exit 2\nfi\n\n# increment the build number (ie 115 to 116)\nbuildnum=$(expr $buildnum + 1)\n\n# increment the minor part of version number (ie 2.5 to 2.6)\nversion_major=${version%.*}\nversion_minor=$(expr ${version#*.} + 1)\nversion=$version_major.$version_minor\n    \n/usr/libexec/Plistbuddy -c \"Set CFBundleVersion $buildnum\" \"${plist}\"\n    #/usr/libexec/Plistbuddy -c \"Set CFBundleShortVersionString $version\" \"${plist}\"\necho \"Bumped build number to $buildnum\"\n\nelse\n    echo $CONFIGURATION \" build - Not bumping build number.\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BF07D581666169600212ED4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B152673189E679500CB4569 /* DDContextFilterLogFormatter.m in Sources */,
+				5B152655189E678100CB4569 /* NSDictionary_JSONExtensions.m in Sources */,
+				5B152670189E679500CB4569 /* DDFileLogger.m in Sources */,
+				5B152653189E678100CB4569 /* CJSONDeserializer.m in Sources */,
+				5BF07D6D1666169600212ED4 /* main.m in Sources */,
+				5B15266F189E679500CB4569 /* DDASLLogger.m in Sources */,
+				5B152672189E679500CB4569 /* DDTTYLogger.m in Sources */,
+				5BF07D741666169600212ED4 /* AppDelegate.m in Sources */,
+				5B15266E189E679500CB4569 /* DDAbstractDatabaseLogger.m in Sources */,
+				5B152671189E679500CB4569 /* DDLog.m in Sources */,
+				5BF07D82166617F600212ED4 /* ApiSync.m in Sources */,
+				5B152674189E679500CB4569 /* DDDispatchQueueLogFormatter.m in Sources */,
+				5BF07DC9166650D600212ED4 /* PreferencesController.m in Sources */,
+				5B152675189E679500CB4569 /* DDMultiFormatter.m in Sources */,
+				5B152654189E678100CB4569 /* CJSONSerializer.m in Sources */,
+				5B03D3B51666896900F1E044 /* StatusMenu.m in Sources */,
+				5B15266D189E679500CB4569 /* CLIColor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5BF07D691666169600212ED4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BF07D6A1666169600212ED4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5BF07D6F1666169600212ED4 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BF07D701666169600212ED4 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		5BF07D751666169600212ED4 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BF07D761666169600212ED4 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5BF07D781666169600212ED4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = GingerNotify;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5BF07D791666169600212ED4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = GingerNotify;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5BF07D7B1666169600212ED4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\"$(SRCROOT)/GingerNotify\\\\\\\"",
+					"\\\\\\\"$(SRCROOT)/Frameworks\\\\\\\"/**",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GingerNotify/GingerNotify-Prefix.pch";
+				INFOPLIST_FILE = "GingerNotify/GingerNotify-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = GingerNotify;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5BF07D7C1666169600212ED4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\"$(SRCROOT)/GingerNotify\\\\\\\"",
+					"\\\\\\\"$(SRCROOT)/Frameworks\\\\\\\"/**",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GingerNotify/GingerNotify-Prefix.pch";
+				INFOPLIST_FILE = "GingerNotify/GingerNotify-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = GingerNotify;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BF07D561666169600212ED4 /* Build configuration list for PBXProject "GingerNotify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BF07D781666169600212ED4 /* Debug */,
+				5BF07D791666169600212ED4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BF07D7A1666169600212ED4 /* Build configuration list for PBXNativeTarget "GingerNotify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BF07D7B1666169600212ED4 /* Debug */,
+				5BF07D7C1666169600212ED4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BF07D531666169600212ED4 /* Project object */;
+}
